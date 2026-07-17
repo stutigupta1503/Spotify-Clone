@@ -8,9 +8,10 @@ body{
 .main{
     display:flex;
     height:100vh;
+    padding:0.5rem;
 }
 .sidebar{
-    background-color:#0f0;
+    background-color:#000;
     width:320px;
     border-radius:1rem; /* 1 rem = 16px */
 }
@@ -40,6 +41,7 @@ body{
 .nav-option{
     line-height:2.5rem;
     margin:0.5rem ;
+    opacity:0.75;
 }
 .nav-option i{
     font-size:1.25rem;
@@ -52,28 +54,57 @@ body{
     line-height:1rem;
     margin-left:1rem;
 }
-#search{
-    opacity:0.75;
-}
-#search:hover{
+.nav-option:hover{
     opacity:1;
 }
-.lib-option{
+.library{
+    height:100%;
+    background-color:#121212;
+    border-radius:1rem;
+    margin-top:0.5rem;
     margin:10px;
+    padding:0.5rem;
+}
+.options{
     display:flex;
-    justify-content:flex-start;
-    /* line-height:0; */
+    justify-content:space-between;  
+    align-items:center;
 }
 .lib-option img{
     height:1.25rem;
     width:1.25rem;
 }
 .lib-option a{
-    margin:0 1.5rem 0 0.5rem;
     text-decoration: none;
     color:#fff;
 }
-.lib-option i{
-    align-self:flex-end;
-    margin:0.25rem;
+.icons i{
+    margin-right:1rem;
+    opacity:0.75;
+    font-size:1.25rem;
+}
+.icons i:hover{
+    opacity:1;
+}
+.lib-box{
+    background-color:#1f1f1f;
+    margin:0.5rem 0;
+    padding:1rem 1.25rem;
+    border-radius:1rem;
+}
+.box-p1{
+    margin-bottom:0.5rem;
+}
+.box-p{
+    font-size:1rem;
+    font-weight:700;
+    margin:0;
+}
+.badge{
+    padding:0.5rem 1rem;
+    font-size:14px;
+    font-weight:700;
+    border-radius:25px;
+    border: none;
+    width: fit-content;
 }
