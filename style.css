@@ -108,3 +108,32 @@ body{
     border: none;
     width: fit-content;
 }
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color:#121212;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:1rem 0;
+}
+.sticky-nav-icons {
+    margin-left:1rem;
+}
+.sticky-nav-options{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sticky-item{
+    margin-right:1rem;
+}
+.dark-badge{
+    background-color:#000;
+    color:#fff;
+}
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
