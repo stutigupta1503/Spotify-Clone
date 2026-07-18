@@ -20,6 +20,7 @@ body{
     flex:1;
     border-radius:1rem;
     overflow:auto;
+    padding:0 2rem;
 }
 .music-player{
     background-color:#000;
@@ -27,6 +28,7 @@ body{
     height:70px;
     position:fixed;
     bottom:0px;
+    left:0;
 }
 .navbar{
     background-color:#121212;
@@ -116,6 +118,7 @@ body{
     justify-content: space-between;
     align-items:center;
     padding:1rem 0;
+    z-index:10;
 }
 .sticky-nav-icons {
     margin-left:1rem;
@@ -136,4 +139,38 @@ body{
     .hide{
         display:none;
     }
+}
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.card{
+    width:10rem;
+    background-color:#1f1f1f;
+    border-radius:0.5rem;
+    padding:0.5rem;
+    margin:0.5rem;
+}
+.card img{
+    border-radius:0.5rem;
+    width:10rem;
+}
+.card-title{
+    font-size:1rem;
+}
+.card-text{
+    font-size:0.75rem;
+    opacity:0.8;
+}
+.footer{
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.line{
+    height:50%;
+    width:90%;
+    border-top:1px solid white;
+    opacity:0.4;
 }
